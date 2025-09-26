@@ -1,0 +1,114 @@
+﻿<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="false" onstart="jscall(reactKrpano.onStart())">
+	<include url="skin/vtourskin.xml" />
+	<!-- ############################################################## -->
+	<!-- #############   Style commun à tous les Hotspot   ############# -->
+	<!-- ############################################################## -->
+	<style name="hotspot_custom_style"
+   type="html"
+   width="48"
+   height="48"
+   renderer="css3d"
+   zorder="500"
+   edge="left"
+   scale="0"
+   oy="30"
+   onloaded="delayedcall(0.3, tween(scale,1,1.3,easeOutQuart); tween(oy,0,1.3,easeOutQuart));"
+   onover="set(zorder,999); tween(width, get(tweenwidth), 1.2, easeOutQuart);"
+   onout="set(zorder,500); tween(width, 48, 1, easeOutQuart);"
+/>
+	<!-- ############################################################## -->
+	<!-- ############################################################## -->
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="true"
+	               maps_type="openstreetmaps"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="true"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	<scene name="scene_1" title="Yaya Dos 4" onstart="" thumburl="panos/Yaya_Dos_4.tiles/thumb.jpg" lat="37.04926867" lng="26.93765353" alt="440.69" heading="0.0" >
+		<control bouncinglimits="calc:image.cube ? true : false" />
+		<view hlookat="1.211" vlookat="23.861" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<preview url="panos/Yaya_Dos_4.tiles/preview.jpg" />
+		<image>
+			<cube url="panos/Yaya_Dos_4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304,4608" />
+		</image>
+		<!-- ==================================== -->
+		<!-- ==================================== -->
+		<!-- ==================================== -->
+		<!-- ==================================== -->
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/plage-emporio.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745694_custom"  ath="61.582" atv="21.896" depth="1000.0" linkedscene="scene_plage_emporio_2" linkedscene_lookat="-149.66,-11.95,120.0" linkedscene_spot="spot1789745913" linkedscene_hoffset="182.97" use3dtransition="true" visible="true"  />
+		<!-- ==================================== -->
+		<!-- ==================================== -->
+		<!-- ==================================== -->
+		<!-- ==================================== -->
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-vue-de-dos.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745988"  ath="-25.541" atv="55.841" depth="1000.0" linkedscene="scene_yaya_dos_5" linkedscene_lookat="16.18,3.36,120.0" linkedscene_spot="spot1789746185" linkedscene_hoffset="357.63" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-sommet-yaya.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789746240"  ath="-75.64" atv="-0.164" depth="1000.0" linkedscene="scene_sommet_yaya" linkedscene_lookat="165.34,2.74,120.0" linkedscene_spot="spot1789746480" linkedscene_hoffset="241.68" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-face-a-yaya.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789747913"  ath="2.818" atv="26.041" depth="1000.0" linkedscene="scene_yaya_face_7" linkedscene_hoffset="172.52" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-vue-sur-la-mer.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1790615080"  ath="-3.944" atv="42.384" depth="1000.0" linkedscene="scene_yaya_dos_6" linkedscene_lookat="16.94,-9.01,120.0" linkedscene_spot="spot1790615312" linkedscene_hoffset="351.08" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/chez-yaya-centre-du-village.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1791410163"  ath="-1.832" atv="36.079" depth="1000.0" linkedscene="scene_yaya_centre_9" linkedscene_lookat="26.87,0.0,120.0" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/plage-plage-de-sable.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1791410316"  ath="-31.19" atv="19.17" depth="1000.0" linkedscene="scene_plage_yaya_droite_1" linkedscene_lookat="8.24,0.76,120.0" linkedscene_spot="spot1791410651" linkedscene_hoffset="137.23" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/plage-agrinonta.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1791410695"  ath="-38.223" atv="3.724" depth="1000.0" linkedscene="scene_plage_arginonta" linkedscene_lookat="-15.89,1.4,120.0" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-vue-de-la-mer.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1791410910"  ath="0.661" atv="12.545" depth="1000.0" linkedscene="scene_yaya_face_2" linkedscene_lookat="-135.04,-13.69,120.0" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-sommet-yaya.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1791411408"  ath="-40.63" atv="-4.563" depth="1000.0" linkedscene="scene_sommet_ile" linkedscene_lookat="-180.15,-16.94,120.0" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/activites-plongee.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1791411594"  ath="-16.385" atv="17.704" depth="1000.0" linkedscene="scene_plonge_1" linkedscene_lookat="-373.13,-9.73,107.0" />
+	</scene>
+	<events onnewscene="jscall(calc('reactKrpano.onSceneChange(`' + get(xml.scene) + '`)'))" />
+</krpano>
