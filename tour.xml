@@ -1,5 +1,4 @@
 ﻿<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="true" onstart="jscall(reactKrpano.onStart())">
-	<include url="/krpano/skin/vtourskin.xml" />
 	<!-- ############################################################## -->
 	<!-- #############   Style commun à tous les Hotspot   ############# -->
 	<!-- ############################################################## -->
@@ -73,16 +72,6 @@
 	               design_text_css="color:#FFFFFF; font-family:Arial;"
 	               design_text_shadow="1"
 	               />
-	<!--
-	    For an alternative skin design either change the <skin_settings> values 
-	    from above or optionally include one of the predefined designs from below.
-	-->
-	<!-- <include url="/krpano/skin/vtourskin_design_flat_light.xml"  /> -->
-	<!-- <include url="/krpano/skin/vtourskin_design_glass.xml"       /> -->
-	<!-- <include url="/krpano/skin/vtourskin_design_ultra_light.xml" /> -->
-	<!-- <include url="/krpano/skin/vtourskin_design_117.xml"         /> -->
-	<!-- <include url="/krpano/skin/vtourskin_design_117round.xml"    /> -->
-	<!-- <include url="/krpano/skin/vtourskin_design_black.xml"       /> -->
 	<scene name="scene_1" title="Yaya Dos 4" onstart="" thumburl="panos/Yaya_Dos_4.tiles/thumb.jpg" lat="37.04926867" lng="26.93765353" alt="440.69" heading="0.0" >
 		<control bouncinglimits="calc:image.cube ? true : false" />
 		<view hlookat="1.211" vlookat="23.861" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -90,15 +79,7 @@
 		<image>
 			<cube url="panos/Yaya_Dos_4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304,4608" />
 		</image>
-		<!-- ==================================== -->
-		<!-- ==================================== -->
-		<!-- ==================================== -->
-		<!-- ==================================== -->
 		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/plage-emporio.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745694_custom"  ath="61.582" atv="21.896" depth="1000.0" linkedscene="scene_plage_emporio_2" linkedscene_lookat="-149.66,-11.95,120.0" linkedscene_spot="spot1789745913" linkedscene_hoffset="182.97" use3dtransition="true" visible="true"  />
-		<!-- ==================================== -->
-		<!-- ==================================== -->
-		<!-- ==================================== -->
-		<!-- ==================================== -->
 		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-vue-de-dos.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745988"  ath="-25.541" atv="55.841" depth="1000.0" linkedscene="scene_yaya_dos_5" linkedscene_lookat="16.18,3.36,120.0" linkedscene_spot="spot1789746185" linkedscene_hoffset="357.63" use3dtransition="true" />
 		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-sommet-yaya.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789746240"  ath="-75.64" atv="-0.164" depth="1000.0" linkedscene="scene_sommet_yaya" linkedscene_lookat="165.34,2.74,120.0" linkedscene_spot="spot1789746480" linkedscene_hoffset="241.68" use3dtransition="true" />
 		<hotspot style="hotspot_custom_style" css="background-image:url('/krpano/skin/vues-aeriennes-face-a-yaya.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789747913"  ath="2.818" atv="26.041" depth="1000.0" linkedscene="scene_yaya_face_7" linkedscene_hoffset="172.52" use3dtransition="true" />
