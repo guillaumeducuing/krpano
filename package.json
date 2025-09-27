@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "rewriteHotspot": "node script/rewriteHotspot.js",
+    "rewriteTourXml": "node script/rewriteTourXml.js",
     "build": "echo 'Build script placeholder'",
     "start": "echo 'Start script placeholder'"
   },

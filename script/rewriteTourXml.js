@@ -3,7 +3,7 @@ const path = require("path");
 require("dotenv").config();
 const inputPath = path.join(__dirname, "../tour.xml");
 const xml = fs.readFileSync(inputPath, "utf8");
-const skinPath = process.env.KRPANO_SKIN_PATH;
+const skinPath = process.env.KRPANO_BASE_URL;
 // Blocs à insérer
 const header = `<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="false" onstart="jscall(reactKrpano.onStart())">
     <!-- ############################################################## -->
@@ -75,7 +75,7 @@ const header = `<krpano version="1.23" title="Virtual Tour" startscene="" shower
                    design_thumbborder_bgroundedge="0"
                    design_text_css="color:#FFFFFF; font-family:Arial;"
                    design_text_shadow="1"
-                   skin_path="${skinPath}"
+                   skin_path="${skinPath}/krpano/skin/"
                    />
     <!-- =================================================================== -->
     <!-- =================================================================== -->
@@ -91,7 +91,7 @@ const footer = `
         <!-- ================================================================================ -->
         <!-- ================================================================================ -->
         <!-- ================================================================================ -->
-        <events onnewscene="jscall(calc('reactKrpano.onSceneChange(\`' + get(xml.scene) + '\`))')" />
+           <events onnewscene="jscall(calc('reactKrpano.onSceneChange(\`' + get(xml.scene) + '\`)'))" />
     </krpano>
 `;
 
