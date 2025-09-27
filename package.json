@@ -4,7 +4,7 @@
   "description": "Outils pour gérer les fichiers Krpano (hotspots, XML, etc.)",
   "main": "index.js",
   "scripts": {
-    "replaceCssHotspot": "node script/replaceCssHotspot.js",
+    "rewriteHotspot": "node script/rewriteHotspot.js",
     "build": "echo 'Build script placeholder'",
     "start": "echo 'Start script placeholder'"
   },
