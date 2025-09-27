@@ -1,4 +1,4 @@
-﻿<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="true" onstart="jscall(reactKrpano.onStart())">
+﻿<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="false" onstart="jscall(reactKrpano.onStart())">
 	<!-- ############################################################## -->
 	<!-- #############   Style commun à tous les Hotspot   ############# -->
 	<!-- ############################################################## -->
