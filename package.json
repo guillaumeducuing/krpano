@@ -1,0 +1,17 @@
+{
+  "name": "krpano-tools",
+  "version": "1.0.0",
+  "description": "Outils pour gérer les fichiers Krpano (hotspots, XML, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "replaceCssHotspot": "node scripts/replaceCssHotspot.js",
+    "build": "echo 'Build script placeholder'",
+    "start": "echo 'Start script placeholder'"
+  },
+  "author": "Guillaume Ducuing",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
