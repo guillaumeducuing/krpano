@@ -1,5 +1,5 @@
 ﻿<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="false" onstart="jscall(reactKrpano.onStart())">
-	<include url="https://guillaumeducuing.github.io/krpano/skin/vtourskin.xml" />
+	<!-- <include url="skin/vtourskin.xml" /> -->
 	<!-- ############################################################## -->
 	<!-- #############   Style commun à tous les Hotspot   ############# -->
 	<!-- ############################################################## -->
