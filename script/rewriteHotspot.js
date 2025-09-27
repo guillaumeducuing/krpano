@@ -1,15 +1,14 @@
 /* Ce script met à jour les hotspots avec les skins, le style du hotspot et la fonction onclick  */
 
+require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
+const BASE_URL = process.env.KRPANO_BASE_URL;
 
 const correspondances = {
-  scene_1:
-    "background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-1.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;",
-  scene_2:
-    "background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-2.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;",
-  scene_3:
-    "background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-3.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;"
+  scene_1: `background-image:url('${BASE_URL}/krpano/skin/skin-1.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;`,
+  scene_2: `background-image:url('${BASE_URL}/krpano/skin/skin-2.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;`,
+  scene_3: `background-image:url('${BASE_URL}/krpano/skin/skin-3.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;`
 };
 
 const xmlPath = path.join(__dirname, "../tour.xml");
