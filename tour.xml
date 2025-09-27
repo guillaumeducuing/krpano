@@ -15,9 +15,6 @@
    onover="set(zorder,999); tween(width, get(tweenwidth), 1.2, easeOutQuart);"
    onout="set(zorder,500); tween(width, 48, 1, easeOutQuart);"
 />
-	<!-- ############################################################## -->
-	<!-- ############################################################## -->
-	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="true"
 	               maps_type="openstreetmaps"
 	               maps_bing_api_key=""
