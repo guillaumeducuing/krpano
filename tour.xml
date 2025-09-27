@@ -10,6 +10,7 @@
    zorder="500"
    edge="left"
    scale="0"
+   tweenwidth="250"
    oy="30"
    onloaded="delayedcall(0.3, tween(scale,1,1.3,easeOutQuart); tween(oy,0,1.3,easeOutQuart));"
    onover="set(zorder,999); tween(width, get(tweenwidth), 1.2, easeOutQuart);"
@@ -69,6 +70,12 @@
 	               design_text_shadow="1"
 				   skin_path="https://guillaumeducuing.github.io/krpano/skin/"
 	               />
+	<!-- =================================================================== -->
+	<!-- =================================================================== -->
+	<!-- =================================================================== -->
+	<!-- =================================================================== -->
+	<!-- =================================================================== -->
+	<!-- =================================================================== -->
 	<scene name="scene_1" title="Yaya Dos 4" onstart="" thumburl="panos/Yaya_Dos_4.tiles/thumb.jpg" lat="37.04926867" lng="26.93765353" alt="440.69" heading="0.0" >
 		<control bouncinglimits="calc:image.cube ? true : false" />
 		<view hlookat="1.211" vlookat="23.861" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -76,9 +83,14 @@
 		<image>
 			<cube url="panos/Yaya_Dos_4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304,4608" />
 		</image>
-		<hotspot style="hotspot_custom_style" css="background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-1.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745694_custom"  ath="61.582" atv="21.896" depth="1000.0" linkedscene="scene_1" linkedscene_lookat="-149.66,-11.95,120.0" linkedscene_spot="spot1789745913" linkedscene_hoffset="182.97" use3dtransition="true" visible="true"  />
-		<hotspot style="hotspot_custom_style" css="background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-2.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745988"  ath="-25.541" atv="55.841" depth="1000.0" linkedscene="scene_2" linkedscene_lookat="16.18,3.36,120.0" linkedscene_spot="spot1789746185" linkedscene_hoffset="357.63" use3dtransition="true" />
-		<hotspot style="hotspot_custom_style" css="background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-3.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" tweenwidth="250" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789746240"  ath="-75.64" atv="-0.164" depth="1000.0" linkedscene="scene_3" linkedscene_lookat="165.34,2.74,120.0" linkedscene_spot="spot1789746480" linkedscene_hoffset="241.68" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-1.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745694_custom"  ath="61.582" atv="21.896" depth="1000.0" linkedscene="scene_1" linkedscene_lookat="-149.66,-11.95,120.0" linkedscene_spot="spot1789745913" linkedscene_hoffset="182.97" use3dtransition="true" visible="true"  />
+		<hotspot style="hotspot_custom_style" css="background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-2.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789745988"  ath="-25.541" atv="55.841" depth="1000.0" linkedscene="scene_2" linkedscene_lookat="16.18,3.36,120.0" linkedscene_spot="spot1789746185" linkedscene_hoffset="357.63" use3dtransition="true" />
+		<hotspot style="hotspot_custom_style" css="background-image:url('https://guillaumeducuing.github.io/krpano/skin/skin-3.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;" onclick="loadscene(get(linkedscene), null, MERGE, BLEND(0.5));" name="spot1789746240"  ath="-75.64" atv="-0.164" depth="1000.0" linkedscene="scene_3" linkedscene_lookat="165.34,2.74,120.0" linkedscene_spot="spot1789746480" linkedscene_hoffset="241.68" use3dtransition="true" />
 	</scene>
+	<!-- ================================================================================ -->
+	<!-- ================================================================================ -->
+	<!-- ================================================================================ -->
+	<!-- ================================================================================ -->
+	<!-- ================================================================================ -->
 	<events onnewscene="jscall(calc('reactKrpano.onSceneChange(`' + get(xml.scene) + '`)'))" />
 </krpano>
