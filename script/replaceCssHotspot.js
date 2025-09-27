@@ -6,11 +6,11 @@ const path = require("path");
 // Tableau de correspondance : linkedscene => nouveau css
 const correspondances = {
   scene_1:
-    "background-image:url('/krpano/skin/skin-1.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;",
+    "background-image:url('krpano/skin/skin-1.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;",
   scene_2:
-    "background-image:url('/krpano/skin/skin-2.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;",
+    "background-image:url('krpano/skin/skin-2.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;",
   scene_3:
-    "background-image:url('/krpano/skin/skin-3.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;"
+    "background-image:url('krpano/skin/skin-3.png');background-size:auto 50px;background-repeat:no-repeat;background-position:left;overflow:hidden;box-sizing:border-box;border-radius:30px; cursor:pointer;"
 };
 
 const xmlPath = path.join(__dirname, "../tour.xml");
