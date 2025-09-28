@@ -6,6 +6,7 @@ const xml = fs.readFileSync(inputPath, "utf8");
 const skinPath = process.env.KRPANO_BASE_URL;
 // Blocs à insérer
 const header = `<krpano version="1.23" title="Virtual Tour" startscene="" showerrors="false" onstart="jscall(reactKrpano.onStart())">
+<include url="${skinPath}/krpano/skin/vtourskin.xml" />
     <!-- ############################################################## -->
     <!-- #############   Style commun à tous les Hotspot   ############# -->
     <!-- ############################################################## -->

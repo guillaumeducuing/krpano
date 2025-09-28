@@ -6,8 +6,7 @@
   "scripts": {
     "rewriteHotspot": "node scripts/rewriteHotspot.js",
     "rewriteTourXml": "node scripts/rewriteTourXml.js",
-    "cleanKrpano": "node scripts/cleanKrpano.js",
-    "juumo": "npm run rewriteTourXml && npm run rewriteHotspot && npm run cleanKrpano",
+    "juumo": "npm run rewriteTourXml && npm run rewriteHotspot",
     "build": "echo 'Build scripts placeholder'",
     "start": "echo 'Start scripts placeholder'"
   },
